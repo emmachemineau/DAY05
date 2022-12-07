@@ -1,0 +1,33 @@
+Last login: Tue Dec  6 13:21:35 on ttys000
+emmachemineau@MacBook-Air-de-Emma ~ % CREATE TABLE 'wizard' 
+zsh: command not found: CREATE
+emmachemineau@MacBook-Air-de-Emma ~ % CREATE TABLE 'wizard' (
+> 
+> 'id' INT NOT NULL AUTO_INCREMENT
+> 'firstname' VARCHAR(100) NOT NULL, 
+> 'lastname' VARCHAR(100) NOT NULL, 
+> 'birthday' DATE NOT NULL, 
+> 'birth_place' VARCHAR(255) NULL, 
+> 'biography' TEXT NULL, 
+> PRIMARY KEY ('id')
+> );
+zsh: no matches found: (\n\nid INT NOT NULL AUTO_INCREMENT\nfirstname VARCHAR(100) NOT NULL, \nlastname VARCHAR(100) NOT NULL, \nbirthday DATE NOT NULL, \nbirth_place VARCHAR(255) NULL, \nbiography TEXT NULL, \nPRIMARY KEY (id)\n)
+emmachemineau@MacBook-Air-de-Emma ~ % mysql -u racine -p
+Enter password: 
+ERROR 1045 (28000): Access denied for user 'racine'@'localhost' (using password: YES)
+emmachemineau@MacBook-Air-de-Emma ~ % my sql -u root -p
+zsh: command not found: my
+emmachemineau@MacBook-Air-de-Emma ~ % mysql -u root -p
+Enter password: 
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+emmachemineau@MacBook-Air-de-Emma ~ % mysql -u racine -p
+Enter password: 
+ERROR 1045 (28000): Access denied for user 'racine'@'localhost' (using password: YES)
+emmachemineau@MacBook-Air-de-Emma ~ % 
+
+
+
+
+
+
+j'ai pas réussi la suite je suis bloquée
